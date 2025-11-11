@@ -1,4 +1,4 @@
-import styles from './ResultadoVehiculos.module.css';
+import styles from './resultadoVehiculos.module.css';
 
 export default function ResultadoVehiculos({
   vehiculo = {},
