@@ -1,0 +1,56 @@
+.modalDetail{
+  position: fixed;         /* sobre la ventana */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  /* centra exacto */
+  z-index: 1000;
+
+  width: min(90vw, 560px);
+  height: auto;
+  padding: 32px;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  background-color: #334155;
+  box-shadow: 0 6px 18px rgba(0,0,0,.25);
+}
+.mini{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+}
+.button{
+    border-radius: 15px
+}
+.costoRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 12px 0 6px;
+}
+
+.costoLabel {
+  font-weight: 600;
+  color: #111827;
+}
+
+.costoInput {
+  padding: 8px 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  outline: none;
+  color: #111827;
+}
+.costoInput:focus {
+  border-color: black;
+  box-shadow: 0 0 0 3px rgba(79,110,219,.15);
+}
+
+.error {
+  color: #dc2626;
+  margin-top: 8px;
+}

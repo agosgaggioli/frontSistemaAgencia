@@ -1,0 +1,131 @@
+:root{
+  --degra-dark: #0b0e13;        /* negro azulado para header */
+  --degra-primary: #0b5fa5;     /* azul principal */
+  --degra-primary-600:#094f8a;  /* azul hover */
+  --degra-accent: #e8f2fb;      /* celeste muy suave para zebra/hover */
+  --degra-border: #e5e7eb;      /* gris borde */
+  --degra-bg: #ffffff;          /* fondo blanco */
+  --degra-text: #111827;        /* texto oscuro */
+}
+
+/* Contenedor tabla */
+.table{
+  width: 100%;
+  max-width: 1000px;
+  border-collapse: collapse;
+  background: var(--degra-bg);
+  border: 1px solid var(--degra-border);
+  border-radius: 12px;
+  overflow: hidden;             /* hace que el borde redondeado se vea */
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--degra-text);
+}
+
+/* Encabezado */
+.table thead{
+  background-color: var(--degra-dark);
+  color: #fff;
+}
+.table thead th{
+  font-weight: 600;
+  text-align: left;
+  padding: 10px 12px;
+  white-space: nowrap;
+}
+
+/* Celdas */
+.table tbody td{
+  padding: 10px 12px;
+  border-top: 1px solid var(--degra-border);
+  vertical-align: middle;
+}
+
+/* Zebra + hover suave */
+.table tbody tr:nth-child(even){
+  background: #fafafa;
+}
+.table tbody tr:hover{
+  background: var(--degra-accent);
+}
+
+/* Alinear números (ej. Kilómetros) a la derecha si querés */
+.table .num{
+  text-align: right;
+}
+
+/* Botón dentro del TD de Peritada (siempre botón, diga SI o NO) */
+.table .btn-peritada{
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 14px;
+  border: 1px solid var(--degra-primary);
+  background: transparent;
+  color: var(--degra-primary);
+  cursor: pointer;
+  transition: background .15s ease, color .15s ease, border-color .15s ease;
+}
+.table .btn-peritada:hover{
+  background: var(--degra-accent);
+  border-color: var(--degra-primary-600);
+  color: var(--degra-primary-600);
+}
+
+
+.table .btn-peritada.si{
+  background: var(--degra-primary);
+  color: #fff;
+}
+.table .btn-peritada.si:hover{
+  background: var(--degra-primary-600);
+  border-color: var(--degra-primary-600);
+}
+
+
+.table.compact thead th,
+.table.compact tbody td{
+  padding: 8px 10px;
+}
+.table{
+  border: 1px solid #e5e7eb;  /* ← agrega el borde de abajo también */
+  border-collapse: collapse;
+}
+.table tbody,
+.table td{
+  border: 1px solid #e5e7eb;   /* o #0b5fa5 si querés azul */
+}
+
+.conteiner{
+    display: flex;
+    align-items: first baseline;
+    justify-content: space-around;
+}
+.minibanner {
+  background-color: white;
+  border-left: 4px solid #004AAD;
+  padding: 20px 30px;
+  margin: 20px auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  max-width: 95%;
+}
+
+.minibanner h2 {
+  margin: 0;
+  font-weight: bold;
+  color: #333;
+  font-size: 20px;
+}
+.superContenedor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 35px;
+}
+.superContenedorBoton {
+  width: 150px;
+  height: 35px;
+  border-radius: 15px;
+}

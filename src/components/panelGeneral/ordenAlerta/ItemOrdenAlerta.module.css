@@ -1,0 +1,75 @@
+.card {
+  background: #fff;
+  border: 1px solid #eceff3;
+  border-radius: 12px;
+  padding: 16px 18px;
+  box-shadow: 0 2px 10px rgba(16, 24, 40, 0.06);
+  height: auto;
+  width: 500px;
+}
+
+.head h3 {
+  margin: 0 0 10px 0;
+  color: #111827;           /* gris muy oscuro */
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 2px;
+  border-bottom: 1px dashed #eef1f5;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0; /* para truncado si es muy largo */
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ef4444;      /* rojo alerta */
+  flex: 0 0 auto;
+}
+
+.mainText {
+  color: #0f172a;           /* texto principal */
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.model {
+  color: #475569;           /* tono secundario para el modelo */
+  font-weight: 600;
+}
+
+.badgeDias {
+  color: #dc2626;           /* rojo para los días */
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.empty {
+  color: #6b7280;
+  font-style: italic;
+  padding: 8px 2px;
+}

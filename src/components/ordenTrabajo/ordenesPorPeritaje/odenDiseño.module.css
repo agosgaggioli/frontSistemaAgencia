@@ -1,0 +1,12 @@
+.conteiner{
+    width: 950px;
+    height: 55px;
+    border: solid 1px black;
+    border-radius: 25px;
+    display: flex;
+    gap: 65px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px
+}

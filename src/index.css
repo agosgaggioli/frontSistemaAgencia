@@ -1,0 +1,57 @@
+/* reset.css — Modern CSS Reset + bases accesibles */
+
+/* 1) Box sizing consistente */
+*, *::before, *::after { box-sizing: border-box; }
+
+/* 2) Sacar márgenes por defecto */
+* { margin: 0; }
+
+/* 3) Altura base y tipografía legible */
+html, body { height: 100%; }
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", Arial, sans-serif;
+}
+
+/* 4) Medios fluidos por defecto */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 5) Formularios heredan tipografía/colores (no tocamos bordes) */
+input, button, textarea, select {
+  font: inherit;
+  color: inherit;
+}
+
+/* 6) Listas sin bullets cuando sean listas “semánticas” controladas */
+ul[role="list"], ol[role="list"] { list-style: none; padding-left: 0; }
+
+/* 7) Links sin color/decoration por defecto (lo definís en tus estilos) */
+a { color: inherit; text-decoration: none; }
+
+/* 8) Tablas limpias */
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* 9) Raíz aislada (evita z-index raros) */
+#root, #__next { isolation: isolate; }
+
+/* 10) Focus visible claro (ajustá color a tu marca) */
+:focus-visible {
+  outline: 2px solid #2563EB; /* azul Degra recomendado */
+  outline-offset: 2px;
+}
+
+/* 11) Respeta usuarios con motion reducido */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

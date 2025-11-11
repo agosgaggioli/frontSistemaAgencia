@@ -1,0 +1,81 @@
+.conteinerCards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    margin-top: 35px;
+}
+.conteinerCards h3{
+    font-size: 40px;
+}
+.conteinerCards h4{
+    font-size: 20px;
+}
+.card{
+    border-radius: 15px;
+    border: solid 1px black;
+    width: 250px;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #15803d;
+    color: white;
+}
+.cardbl{
+    border-radius: 15px;
+    border: solid 1px black;
+    width: 200px;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.cardb{
+    border-radius: 15px;
+    border: solid 1px black;
+    width: 200px;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #1d4ed8;
+    color: white;
+}
+.cardr{
+    border-radius: 15px;
+    border: solid 1px black;
+    width: 200px;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #801515;
+    color: white;
+}
+.filtros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    margin-top: 50px;
+}
+.filtros select, input{
+    border-radius: 15px;
+    height: 35px;
+    padding-left: 5px;
+    width: 350px;
+    border: solid 1px black;
+}
+.orden{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 55px;
+}

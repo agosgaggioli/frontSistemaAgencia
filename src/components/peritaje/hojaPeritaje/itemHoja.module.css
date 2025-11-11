@@ -1,0 +1,86 @@
+.cards {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1DB954;
+    border-radius: 25px;
+    color: white;
+    height: 150px;
+    width: 150px;
+
+}
+
+.card h5 {
+    font-size: 25px;
+}
+
+.cardb h5 {
+    font-size: 25px;
+}
+
+.cardf h5 {
+    font-size: 25px;
+}
+
+.cardb {
+    background-color: #004AAD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    color: white;
+    height: 150px;
+
+    width: 150px;
+}
+
+.cardf {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    color: black;
+    height: 150px;
+
+    width: 150px;
+    border: solid 0.5px black;
+}
+
+.chips {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.chip {
+    display: flex;
+    gap: 10px;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.miniChip {
+    background-color: whitesmoke;
+    border: solid 0.5px black;
+    width: auto;
+    height: 35px;
+    color: #004AAD;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}

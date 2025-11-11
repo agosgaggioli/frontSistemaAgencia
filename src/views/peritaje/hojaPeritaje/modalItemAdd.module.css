@@ -1,0 +1,47 @@
+.modalDetail{
+  position: fixed;         /* sobre la ventana */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  /* centra exacto */
+  z-index: 1000;
+
+  width: auto;
+  height: auto;
+  padding: 32px;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  background-color:#004AAD;
+  box-shadow: 0 6px 18px rgba(0,0,0,.25);
+}
+.mini{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+
+}
+.inputcolor{
+    color: black;
+
+}
+.botonv{
+    background-color:#1DB954 ;
+    border-radius: 15px;
+    padding: 7px;
+    color: white;
+    border: white;
+    margin-top: 10px;
+}
+.minis{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5px;
+    margin-bottom: 15px;
+
+}

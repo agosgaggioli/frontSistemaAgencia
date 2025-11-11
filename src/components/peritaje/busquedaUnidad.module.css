@@ -1,0 +1,73 @@
+.conteiner{
+    margin-top: 50px;
+    width: 800px;
+    height: auto;
+    border: solid 1px black;
+    border-radius: 10px;
+   
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.conteinerTitulo{
+    background-color: black;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 50px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.conteinerPaso{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.botton{
+    background-color: #004AAD;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.pDiseño{
+    margin-top: 15px;
+    padding-left: 75px;
+    padding-right: 75px;
+    font-size: 16px;
+}
+.pDiseño span{
+    font-weight: bold;
+    color: #004AAD;
+}
+
+.busqueda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-right: 100px;
+    gap: 7px;
+}
+.busquedas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-right: 100px;
+    gap: 20px;
+    margin-top: 25px;
+}
+.input{
+    width: 400px;
+    border-radius: 5px;
+    border: solid 2px #004AAD;
+    height: 25px;
+}

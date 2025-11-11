@@ -1,0 +1,4 @@
+.chartWrap {
+  min-width: 600px;
+  min-height: 700px;     /* ajustá: 360, 440, 520, etc. */
+}

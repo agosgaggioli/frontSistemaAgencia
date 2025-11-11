@@ -1,0 +1,28 @@
+.grid3x2{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  
+  grid-template-rows: repeat(2, auto);    
+  gap: 12px;
+  background-color: whitesmoke;
+  border-radius: 35px;
+  width: 500px;
+  height: 300px;
+  padding: 15px;
+  justify-items: start; align-items: center;
+  place-items: center; 
+  border: solid 0.5px black;
+}
+.itemsgrid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.itemsgrid h3{
+    color: #64748B;
+    font-size: 21px;
+}
+.itemsgrid h5{
+    color: #111827;
+    font-size: 15px;
+}

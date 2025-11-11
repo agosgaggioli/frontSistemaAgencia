@@ -1,0 +1,57 @@
+.button {
+  --bg: #4c6ef5;           /* azul principal */
+  --bg-hover: #3f5ae6;
+  --bg-active: #3850cc;
+  --text: #ffffff;
+  --ring: 0 0 0 3px rgba(76, 110, 245, .35);
+
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+
+  padding: .56rem 1rem;
+  border: 0;
+  border-radius: 10px;     /* bordes suaves */
+  background: var(--bg);
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.95rem;
+  line-height: 1;
+  cursor: pointer;
+  user-select: none;
+
+  transition: background .15s ease, transform .04s ease, box-shadow .15s ease;
+  box-shadow: 0 1px 0 rgba(0,0,0,.08), inset 0 -1px 0 rgba(0,0,0,.08);
+}
+
+/* icono “+” embebido (opcional) */
+.button::before {
+  content: "+";
+  font-weight: 700;
+  opacity: .9;
+}
+
+.button:hover { background: var(--bg-hover); }
+.button:active { background: var(--bg-active); transform: translateY(1px); }
+
+.button:focus-visible {
+  outline: none;
+  box-shadow: var(--ring);
+}
+
+/* Estado deshabilitado */
+.button:disabled,
+.button[aria-disabled="true"] {
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+/* Bloque de acciones (los 3 botones) */
+.actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+/* Tamaños opcionales */
+.sm { padding: .44rem .8rem; font-size: .9rem; }
+.lg { padding: .7rem 1.2rem; font-size: 1rem; border-radius: 12px; }
