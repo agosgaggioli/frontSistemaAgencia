@@ -3,6 +3,8 @@ import axios from "axios";
 import OrdenesPorPeritaje from "../../../components/ordenTrabajo/ordenesPorPeritaje/ordenesPorPeritaje";
 import styles from "./ordenPeritaje.module.css";
 
+const API = import.meta.env.VITE_API_URL;
+
 export default function OrdenPeritaje() {
   const raw = localStorage.getItem("IdHoja");
   const hojaId = raw ? Number(raw) : null;
@@ -13,7 +15,7 @@ export default function OrdenPeritaje() {
   useEffect(() => {
     if (hojaId == null) return;
     axios
-      .get(`http://localhost:3009/peritaje/${hojaId}`)
+      .get(`${API}/peritaje/${hojaId}`)
       .then(({ data }) => {
         console.log("Peritaje ->", data);
         setHojaTrabajo(data);
